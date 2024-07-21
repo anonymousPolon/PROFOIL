@@ -69,6 +69,7 @@ for %%F in (*.in) do (
     @REM this line of code below doesn't output the .tra file and .dump file
     @REM only the .dmp and the fort.number file
     @REM need some modification since MS-DOS doesn't have tee command like UNIX
+    profoil.exe
     profoil.exe > profoil_out.txt
     echo ************************************            >> "results-gfortran/profoil_test_long.txt"
     echo Running file: %%F                               >> "results-gfortran/profoil_test_long.txt"
